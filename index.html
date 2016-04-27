@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Information Visualization</title>
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Custom files -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- your script file -->
+    <script src="js/main.js"></script>
+</head>
+<body class="container">
+    <div>
+        <h1>HERC Website Activity</h1>
+    </div>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input value="Jobs_Posted" class="views" type="radio" name="options" id="option1" autocomplete="off" checked>Posted Jobs
+        </label>
+        <label class="btn btn-primary">
+            <input value="Total_Views" type="radio" class="views" name="options" id="option2" autocomplete="off">Total Views
+        </label>
+        <label class="btn btn-primary">
+            <input value="Apply_Clicks" type="radio" class="views" name="option" id="option3" autocomplete="off">Apply Clicks
+        </label>
+    </div>
+
+    <div id="myDiv"></div>
+
+
+</body>
+</html>

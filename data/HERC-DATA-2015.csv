@@ -1,0 +1,49 @@
+School_Names,Name,Data,type,percent
+Bellevue College,BC,131,Jobs_Posted,0.00411
+Bill and Melinda Gates Foundation,BMGF,20,Jobs_Posted,0.0026
+Central Washington University,CWU,188,Jobs_Posted,0.00231
+Eastern Washington University,EWU,164,Jobs_Posted,0.00443
+Edmonds Community College,ECC,74,Jobs_Posted,0.00547
+Fred Hutch,FH,229,Jobs_Posted,0.00523
+Gonzaga University,GU,79,Jobs_Posted,0.00371
+Green River College,GRC,68,Jobs_Posted,0.003
+Lake Washington Institute of Technology,LWIT,16,Jobs_Posted,0.00336
+Pacific Lutheran University,PLU,132,Jobs_Posted,0.00323
+Pierce College,PC,138,Jobs_Posted,0.00338
+Seattle Cancer Care Alliance,SCCA,,Jobs_Posted,
+University of Puget Sound,UPS,22,Jobs_Posted,0.0032
+University of Washington,UW,5097,Jobs_Posted,0.00361
+Washington State University ,WSU,502,Jobs_Posted,0.00197
+Whatcom Community College,WCC,40,Jobs_Posted,0.00324
+Bellevue College,BC,31800,Total_Views,
+Bill and Melinda Gates Foundation,BMGF,7480,Total_Views,
+Central Washington University,CWU,80970,Total_Views,
+Eastern Washington University,EWU,36810,Total_Views,
+Edmonds Community College,ECC,13441,Total_Views,
+Fred Hutch,FH,469,Total_Views,
+Gonzaga University,GU,21142,Total_Views,
+Green River College,GRC,22477,Total_Views,
+Lake Washington Institute of Technology,LWIT,4722,Total_Views,
+Pacific Lutheran University,PLU,40687,Total_Views,
+Pierce College,PC,40607,Total_Views,
+Seattle Cancer Care Alliance,SCCA,,Total_Views,
+University of Puget Sound,UPS,6838,Total_Views,
+University of Washington,UW,1404151,Total_Views,
+Washington State University ,WSU,254070,Total_Views,
+Whatcom Community College,WCC,12260,Total_Views,
+Bellevue College,BC,60,Apply_Clicks,
+Bill and Melinda Gates Foundation,BMGF,22,Apply_Clicks,
+Central Washington University,CWU,97,Apply_Clicks,
+Eastern Washington University,EWU,53,Apply_Clicks,
+Edmonds Community College,ECC,0,Apply_Clicks,
+Fred Hutch,FH,60,Apply_Clicks,
+Gonzaga University,GU,85,Apply_Clicks,
+Green River College,GRC,88,Apply_Clicks,
+Lake Washington Institute of Technology,LWIT,15,Apply_Clicks,
+Pacific Lutheran University,PLU,79,Apply_Clicks,
+Pierce College,PC,137,Apply_Clicks,
+Seattle Cancer Care Alliance,SCCA,,Apply_Clicks,
+University of Puget Sound,UPS,18,Apply_Clicks,
+University of Washington,UW,806,Apply_Clicks,
+Washington State University ,WSU,723,Apply_Clicks,
+Whatcom Community College,WCC,58,Apply_Clicks,
