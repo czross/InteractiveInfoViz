@@ -14,6 +14,8 @@
 }
 
 .bar {
-  fill:green;
+  fill:blue;
   opacity:.4;
+  outline-color: #1c1c1c;
+  outline: solid;
 }

@@ -20,11 +20,13 @@ $(function () {
         var height = 600 - margin.bottom - margin.top;
         var width = 1000 - margin.left - margin.right;
 
+        //creates svg that parts will be added to.
         var svg = d3.select("#myDiv")
             .append('svg')
             .attr('height', 600)
             .attr('width', 1000);
 
+        //main element where the rects will be placed
         var g = svg.append('g')
             .attr('transform', 'translate(' +  margin.left + ',' + margin.top + ')')
             .attr('height', height)
@@ -46,6 +48,7 @@ $(function () {
             .attr('transform', 'translate(' + (margin.left - 40) + ',' + (margin.top + height/2) + ') rotate(-90)')
             .attr('class', 'title');
 
+        //This sets the xscale as an ordinal one and the yScale as a linear one based on the data set
         var setScales = function(data) {
             var schools = data.map(function(d) {return d.Name});
 
@@ -58,7 +61,8 @@ $(function () {
 
             yScale = d3.scale.linear().range([height, 0]).domain([0, yMax]);
         }
-        
+
+        //creates the axises and the labels that are associated with them
         var setAxes = function() {
 
             var xAxis = d3.svg.axis()
@@ -78,6 +82,9 @@ $(function () {
             yAxisText.text('Number of ' + choice)
         }
 
+        //this filters the data based on which button is selected
+        //it will only return data values that relate to things such as
+        //Posted_Jobs, Total_Views and Apply_Clicks
         var filterData = function() {
             chosenData = allData.filter(function(d) {
                 return d.type == choice;
@@ -88,12 +95,14 @@ $(function () {
                 });
         }
 
+        //This function contains all the necessary functions that will create the new graphic in the svg
         var draw = function(data) {
             setScales(data);
             setAxes();
 
             var bars = g.selectAll('rect').data(data)
 
+            //creates each of the bars based on the data pased and the scales set
             bars.enter().append('rect')
                 .attr('x', function(d, i){return xScale(d.Name)})
                 .attr('y', height)
@@ -102,8 +111,11 @@ $(function () {
                 .attr('class', 'bar')
                 .attr('title', function(d) {return d.School_Name});
 
+            //removes any elements no longer supported by the data
             bars.exit().remove();
 
+            //Adds a cool transition to the bar height changes and the axis changes
+            //makes people go "ooh" and "ahh"
             bars.transition()
                 .duration(1500)
                 .delay(function(d,i){return i*50})
@@ -114,32 +126,17 @@ $(function () {
                 .attr('title', function(d) {return d.School_Name});
         };
 
-
+        //Looks for any of the button input changes and determines which data will be used in the
+        //new draw functions
         $("input").on('change', function() {
             // Get value, determine if it is the sex or type controller
             var val = $(this).val();
             choice = val;
-            var isPercent = $(this).hasClass('percent')
-            if(isPercent) {
-                filterData();
-                draw2(chosenData);
-            }else {
-                filterData();
-                draw(chosenData);
-            }
-
         });
 
         filterData();
         draw(chosenData);
 
-        /* Using jQuery, select all circles and apply a tooltip
-         If you want to use bootstrap, here's a hint:
-         http://stackoverflow.com/questions/14697232/how-do-i-show-a-bootstrap-tooltip-with-an-svg-object
-         */
-        $("rect").tooltip({
-            'container': 'body',
-            'placement': 'top'
-        });
+
     })
 })
