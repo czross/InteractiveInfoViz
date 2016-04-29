@@ -131,7 +131,10 @@ $(function () {
         $("input").on('change', function() {
             // Get value, determine if it is the sex or type controller
             var val = $(this).val();
+            console.log(val);
             choice = val;
+            filterData();
+            draw(chosenData);
         });
 
         filterData();

@@ -2,6 +2,12 @@
 
 A good portion of the code was from Mike Freeman's m.8 exercise 3 on github.
 
+The main questions that people would want to ask about this data is how the different institutions compared to each other,
+One question might arise surrounding did WSU post more jobs or did UW post more jobs.  Another type of questions that,
+arises focuses on the comparison between postings, views, and apply clicks.  With the ability to switch between all three
+of those options it allows a user to compare the different data in relation to the other schools and see if there is any
+significant difference.  
+
 The data set that I used is from a group within the University of Washington who help facilitate the Greater Washington
 State HERC (Higher Education Recruitment Consortium).  The data relates to the different interactions that the HERC
 website has such as viewers, people who apply, and jobs posted.  Each of these different factors relate to the different
